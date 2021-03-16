@@ -1,2 +1,3 @@
-# mojito-compack-vue
-mojito vue2组件开发
+# screen-libpack-vue
+
+vue组件打包
