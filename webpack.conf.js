@@ -1,5 +1,6 @@
 const path = require("path");
 const { merge } = require('webpack-merge');
+const WebpackBar = require('webpackbar');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const ROOT_PATH = path.resolve(process.cwd());
 const APP_PATH = `${ROOT_PATH}/src`;
@@ -12,7 +13,8 @@ module.exports = function(webpackConf) {
     mode: "production",
     entry: "./src/index.js",
     externals: {
-      echarts: "echarts",
+      react: "React",
+      "react-dom": "ReactDOM",
       vue: "vue"
     },
     // 默认import的后缀名
@@ -25,7 +27,8 @@ module.exports = function(webpackConf) {
     },
     plugins: [
       // make sure to include the plugin!
-      new VueLoaderPlugin()
+      new VueLoaderPlugin(),
+      new WebpackBar()
     ],
     module: {
       rules: [
