@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "start-storybook -p 6006 -s ./resources --no-dll",
+    "start": "start-storybook -p 6006 -s ./resources --no-dll --no-manager-cache",
     "build": "node build.js",
     "build-storybook": "build-storybook"
   },
@@ -39,6 +39,8 @@
     "zip-webpack-plugin": "^3.0.0"
   },
   "dependencies": {
+    "core-js": "^3.9.1",
+    "element-ui": "^2.15.1",
     "vue": "^2.6.12",
     "vue-loader": "^15.9.5",
     "vue-template-compiler": "^2.6.12",

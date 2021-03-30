@@ -15,7 +15,9 @@ module.exports = function(webpackConf) {
     externals: {
       react: "React",
       "react-dom": "ReactDOM",
-      vue: "vue"
+      vue: "Vue",
+      "element-ui":"ElementUI",
+
     },
     // 默认import的后缀名
     resolve: {

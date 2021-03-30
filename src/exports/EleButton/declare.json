@@ -1,0 +1,42 @@
+{
+  "version": "v1.0.0",
+  "name": "EleButton",
+  "props": {
+    "label": {
+      "type": "string",
+      "comment": "按钮显示文本",
+      "default": ""
+    },
+    "type": {
+      "type": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info",
+        "text"
+      ],
+      "default": "primary"
+    },
+    "size": {
+      "type": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "default": "small"
+    }
+  },
+  "events": {
+    "onClick": {
+      "name": "点击",
+      "comment": "点击事件()=>void"
+    }
+  },
+  "dependencies": [
+    "https://cdn.staticfile.org/vue/2.6.9/vue.runtime.min.js",
+    "https://cdn.staticfile.org/element-ui/2.15.1/index.min.js",
+    "https://cdn.staticfile.org/element-ui/2.15.1/theme-chalk/index.min.css"
+  ],
+  "libName": "EleButton"
+}
