@@ -37,6 +37,5 @@
     "https://cdn.staticfile.org/vue/2.6.9/vue.runtime.min.js",
     "https://cdn.staticfile.org/element-ui/2.15.1/index.min.js",
     "https://cdn.staticfile.org/element-ui/2.15.1/theme-chalk/index.min.css"
-  ],
-  "libName": "EleButton"
+  ]
 }
